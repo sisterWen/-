@@ -1,4 +1,4 @@
-var startDate = startDate()
+﻿var startDate = startDate(1)
 var endDate = endDate()
 var startTime = startTime()
 var dayOfWeek = dayOfWeek()
