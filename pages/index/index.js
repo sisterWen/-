@@ -7,8 +7,7 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    cssSelect: "icon-open-new"
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
   bindViewTap: function() {
@@ -51,16 +50,5 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  },
-  formSubmit: function(e) {
-    console.log(e.detail.formId)
-  },
-  tap: function(e) {
-    if (e.target.id == "zengjia") {
-      wx.navigateTo({
-        url: '/pages/detail/detail'
-      })
-    }
-
   }
 })
